@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body class="bg-gray-600 min-h-screen flex flex-col">
+    <nav
+      id="main-nav"
+      class="flex gap-4 bg-gray-800 p-4"
+      aria-label="Main navigation"
+    >
+      <div class="flex gap-4 items-center">
+        <div class="">
+          <img
+            src="https://placehold.co/400x400"
+            alt="placeholder image"
+            class="w-16 h-16 rounded-full"
+          />
+        </div>
+        <div class="">
+          <h1 class="text-3xl text-gray-100 font-bold underline">DevStudio</h1>
+        </div>
+      </div>
+
+      <div class="flex gap-4 items-center ml-auto">
+        <button class="bg-sky-300 p-2 rounded hover:bg-sky-400 active:bg-sky-700">
+          <a
+            href="index.html"
+            aria-current="page"
+            class="aria-[current=page]:text-gray-100 aria-[current=page]:font-semibold p-2"
+            >Home</a
+          >
+        </button>
+        <button class="bg-sky-300 p-2 rounded hover:bg-sky-400 active:bg-sky-700">
+          <a
+            href="about.html"
+            aria-current="page"
+            class="aria-[current=page]:text-gray-100 aria-[current=page]:font-semibold p-2"
+            >About</a
+          >
+        </button>
+        <button class="bg-sky-300 p-2 rounded hover:bg-sky-400 active:bg-sky-700">
+           <a
+            href="contact.html"
+            aria-current="page"
+            class="aria-[current=page]:text-gray-100 aria-[current=page]:font-semibold p-2"
+            >Contact</a>
+        </button>
+      </div>
+    </nav>
+
+    <main class="flex-1">
+      <!-- About Section -->
+      <section
+        id="about"
+        class="about-section bg-gray-100 p-8"
+        aria-label="About DevStudio"
+      >
+        
+        <div class="about-content flex gap-8">
+        <div><img src="images\pexels-yankrukov-crop.JPG" alt=" " class="flex-col  h-auto mt-4 rounded-lg" /></div>
+        <div class="about-text flex-col p-5 gap-8">
+          <h2 class="text-xl font-bold mb-4">About DevStudio</h2>
+          <p class="text-gray-700">
+            DevStudio is a leading web development company specializing in
+            creating custom, responsive websites and applications. Our team of
+            experienced developers and designers work together to deliver
+            high-quality digital solutions that help businesses grow and succeed
+            in the online world.
+            We pride ourselves on our commitment to excellence, attention to
+            detail, and dedication to customer satisfaction. Whether you're a
+            small startup or a large enterprise, we have the expertise and
+            resources to bring your vision to life and create a powerful online
+            presence for your brand.
+          </p>
+        </div>
+        <!-- <div class="about-text flex-col gap-8">
+          <p class="text-gray-700 mt-4">
+            We pride ourselves on our commitment to excellence, attention to
+            detail, and dedication to customer satisfaction. Whether you're a
+            small startup or a large enterprise, we have the expertise and
+            resources to bring your vision to life and create a powerful online
+            presence for your brand.
+          </p>
+        
+        <div> -->
+
+        </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="flex gap-4 items-center justify-center bg-gray-800 p-4">
+          <div class="flex-col p-8">
+            <img src="images\pexels-fauxels-3183150.jpg" alt="" />
+            <h2 class="text-xl text-gray-100 font-bold mb-4">Our Team</h2>
+            <p class="text-gray-100">
+              Our team consists of talented professionals with expertise in
+              various technologies and industries. We are passionate about
+              delivering exceptional results and providing excellent customer
+              service to our clients.
+            </p>
+          </div>
+          <div class="flex-col p-8">
+            <img src="images\pexels-fauxels-3183150.jpg" class=" " alt="" />
+            <h2 class="text-xl text-gray-100 font-bold mb-4">Our Team</h2>
+            <p class="text-gray-100">
+              Our team consists of talented professionals with expertise in
+              various technologies and industries. We are passionate about
+              delivering exceptional results and providing excellent customer
+              service to our clients.
+            </p>
+          </div>
+          <div class="flex-col p-8">
+            <img src="images\pexels-fauxels-3183150.jpg" alt="" />
+            <h2 class="text-xl text-gray-100 font-bold mb-4">Our Team</h2>
+            <p class="text-gray-100">
+              Our team consists of talented professionals with expertise in
+              various technologies and industries. We are passionate about
+              delivering exceptional results and providing excellent customer
+              service to our clients.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section
+        id="testimonials"
+        class="testimonials-section bg-gray-200 p-8"
+        aria-label="Client testimonials"
+      >
+        <h2 class="text-xl font-bold mb-4">What Our Clients Say</h2>
+        <div class="flex gap-4 items-center justify-center">          
+          <div class="flex-col p-4 bg-gray-300 rounded-lg">
+            <p class="text-gray-700 italic">
+              "DevStudio transformed our online presence with a stunning website
+              that perfectly captures our brand. Their team was professional,
+              responsive, and a pleasure to work with. Highly recommended!"
+            </p>
+            <p class="text-gray-700 mt-2 font-bold">- Jane Doe, CEO of Acme Corp</p>
+          </div>
+          <div class="flex-col p-4 bg-gray-300 rounded-lg">
+            <p class="text-gray-700 italic">
+              "The team at DevStudio exceeded our expectations in every way.
+              They delivered a high-quality website on time and within budget.
+              We couldn't be happier with the results!"
+            </p>
+            <p class="text-gray-700 mt-2 font-bold">- John Smith, Founder of Tech Solutions</p>
+          </div>
+          <div class="flex-col p-4 bg-gray-300 rounded-lg">
+            <p class="text-gray-700 italic">
+              "Working with DevStudio was a fantastic experience. They took the
+              time to understand our needs and created a beautiful, functional
+              website that has helped us attract new customers and grow our
+              business."
+            </p>
+            <p class="text-gray-700 mt-2 font-bold">- Sarah Lee, Marketing Director at Creative Agency</p>
+          </div>
+    </main>
+    <!-- Footer Section -->
+    <footer
+      id="site-footer"
+      class="bg-gray-400 p-4 text-center text-gray-700"
+      role="contentinfo"
+      aria-label="Site footer"
+    >
+      <p>&copy; 2026 DevStudio. All rights reserved.</p>
+      <ul class="flex justify-center gap-4 mt-2">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
