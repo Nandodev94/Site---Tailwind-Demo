@@ -6,7 +6,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
 
-  <body class="bg-gray-600 min-h-screen flex flex-col">
+  <body class="bg-gray-700 min-h-screen flex flex-col">
     <nav
       id="main-nav"
       class="flex gap-4 bg-gray-800 p-4"
@@ -15,8 +15,8 @@
       <div class="flex gap-4 items-center">
         <div class="">
           <img
-            src="https://placehold.co/400x400"
-            alt="placeholder image"
+            src="images/DevStudiosLogo.png"
+            alt="DevStudio logo"
             class="w-16 h-16 rounded-full"
           />
         </div>
@@ -27,17 +27,17 @@
 
       <div class="flex gap-4 items-center ml-auto">
         <button
-          class="bg-sky-300 p-2 rounded hover:bg-sky-400 active:bg-sky-700"
+          class="bg-sky-600 p-2 rounded hover:bg-sky-500 active:bg-sky-700"
         >
           <a
-            href="index.html"
+            href="#"
             aria-current="page"
             class="aria-[current=page]:text-gray-100 aria-[current=page]:font-semibold p-2"
             >Home</a
           >
         </button>
         <button
-          class="bg-sky-300 p-2 rounded hover:bg-sky-400 active:bg-sky-700"
+          class="bg-sky-400 p-2 rounded hover:bg-sky-500 active:bg-sky-700"
         >
           <a
             href="about.html"
@@ -47,7 +47,7 @@
           >
         </button>
         <button
-          class="bg-sky-300 p-2 rounded hover:bg-sky-400 active:bg-sky-700"
+          class="bg-sky-400 p-2 rounded hover:bg-sky-500 active:bg-sky-700"
         >
           <a
             href="contact.html"
@@ -58,28 +58,31 @@
         </button>
       </div>
     </nav>
-    <main class="flex-1">
+    <main class="flex-1 mx-15 bg-gray-700 p-8">
       <!-- Hero Section -->
       <section
         id="hero"
-        class="hero-section bg-cover bg-center bg-[url('https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg')] p-8 w-full h-96 flex items-center justify-center text-white"
+        class="shadow-2xl shadow-black/50 mb-8 hero-section rounded-lg bg-cover bg-center bg-[url('https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg')] p-8 w-full h-96 flex items-center justify-center text-gray-100 text-center"
         aria-label="Hero"
       >
-        <div class="text-center bg-gray-700 bg-opacity-20 p-4 rounded-lg">
-          <h2 class="text-2xl font-bold mb-4 text-white">
-            Professional Web Development Services
-          </h2>
-          <p class="text-gray-100">
-            We create custom, responsive websites tailored to your business
-            needs. From concept to deployment, we deliver high-quality web
-            solutions that drive results.
-          </p>
+        <div>
+          <div class="text-center bg-gray-700 bg-opacity-20 p-4 rounded-lg">
+            <h2 class="text-2xl font-bold mb-4 text-white">
+              Professional Web Development — Built to Grow Your Business
+            </h2>
+            <p class="text-gray-100">
+              We design and build custom, responsive websites that turn visitors
+              into customers. From discovery and UX to secure development,
+              launch, and ongoing support, we deliver high-performance web
+              solutions tailored to your goals, timeline, and budget.
+            </p>
+          </div>
         </div>
       </section>
       <!-- Carousel Section -->
       <section
         id="portfolio-carousel"
-        class="carousel-section bg-gray-800 p-8"
+        class="shadow-2xl shadow-black/50 rounded-lg carousel-section bg-gray-800 p-8 mb-8"
         aria-label="Portfolio carousel"
       >
         <!-- <h2 class="text-xl font-bold mb-4 text-gray-100">Our Portfolio</h2> -->
@@ -119,66 +122,62 @@
             data-index="2"
           ></button>
         </div>
-        <script>
-          const images = [
-            "https://images.pexels.com/photos/326518/pexels-photo-326518.jpeg",
-            "https://images.pexels.com/photos/11813187/pexels-photo-11813187.jpeg",
-            "https://images.pexels.com/photos/19387210/pexels-photo-19387210.jpeg",
-          ];
-          let currentIndex = 0;
-          const carouselImage = document.getElementById("carouselImage");
-          const prevBtn = document.getElementById("prevBtn");
-          const nextBtn = document.getElementById("nextBtn");
-          const dots = document.querySelectorAll(".carousel-dot");
-
-          function updateCarousel() {
-            carouselImage.src = images[currentIndex];
-            dots.forEach((dot, i) => {
-              dot.classList.toggle("bg-gray-600", i === currentIndex);
-              dot.classList.toggle("bg-gray-400", i !== currentIndex);
-            });
-          }
-
-          prevBtn.addEventListener("click", () => {
-            currentIndex = (currentIndex - 1 + images.length) % images.length;
-            updateCarousel();
-          });
-
-          nextBtn.addEventListener("click", () => {
-            currentIndex = (currentIndex + 1) % images.length;
-            updateCarousel();
-          });
-
-          dots.forEach((dot) => {
-            dot.addEventListener("click", () => {
-              currentIndex = parseInt(dot.getAttribute("data-index"));
-              updateCarousel();
-            });
-          });
-        </script>
       </section>
       <!-- Services Section -->
       <section
         id="services"
-        class="content-section bg-gray-700 p-8"
+        class="shadow-2xl shadow-black/50 rounded-lg content-section bg-gray-700 p-8 mb-8"
         aria-label="Our services"
       >
-        <div class="text-center">
-          <h2 class="text-xl font-bold mb-4 text-gray-100">Our Services</h2>
-          <ul class="list-inside text-gray-100">
-            <li>Custom Web Design & Development</li>
-            <li>Responsive Mobile-First Websites</li>
-            <li>Full-Stack Application Development</li>
-            <li>E-Commerce Solutions</li>
-            <li>Website Maintenance & Support</li>
-          </ul>
+        <div class="flex justify-center gap-8">
+          <div class="flex flex-col w-1/2 h-auto">
+            <img
+              src="images\pexels-tara-winstead-8386745.jpg"
+              alt="Our Services Image"
+              class="h-auto w-full rounded-lg"
+            />
+          </div>
+          <div class="flex flex-col p-10 w-1/2 h-auto">
+            <div class="text-center">
+              <h2 class="text-xl font-bold mb-4 text-gray-100">Our Services</h2>
+            </div>
+            <div class="text-center">
+              <ul class="list-outside text-gray-100 mb-6">
+                <li>Custom Web Design & Development</li>
+                <li>Responsive Mobile-First Websites</li>
+                <li>Full-Stack Application Development</li>
+                <li>E-Commerce Solutions</li>
+                <li>Website Maintenance & Support</li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section
+        id="cta"
+        class="shadow-2xl shadow-black/50 rounded-lg cta-section bg-gray-900 p-8 text-center text-gray-100 mb-8"
+        aria-label="Call to action"
+      >
+        <h2 class="text-2xl font-bold text-gray-100 mb-4">
+          Ready to Get Started?
+        </h2>
+        <p class="text-gray-300 mb-6">
+          Contact us today for a free consultation and discover how we can help
+          your business thrive online.
+        </p>
+        <a
+          href="contact.html"
+          class="bg-sky-600 hover:bg-sky-500 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-300"
+          >Get in Touch</a
+        >
       </section>
     </main>
     <!-- Footer Section -->
     <footer
       id="site-footer"
-      class="bg-gray-400 p-4 text-center text-gray-700"
+      class="bg-gray-800 p-4 text-center text-gray-100"
       role="contentinfo"
       aria-label="Site footer"
     >
@@ -186,8 +185,45 @@
       <ul class="flex justify-center gap-4 mt-2">
         <li><a href="#">Privacy Policy</a></li>
         <li><a href="#">Terms of Service</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </footer>
+    <script>
+      const images = [
+        "https://images.pexels.com/photos/326518/pexels-photo-326518.jpeg",
+        "https://images.pexels.com/photos/11813187/pexels-photo-11813187.jpeg",
+        "https://images.pexels.com/photos/19387210/pexels-photo-19387210.jpeg",
+      ];
+      let currentIndex = 0;
+      const carouselImage = document.getElementById("carouselImage");
+      const prevBtn = document.getElementById("prevBtn");
+      const nextBtn = document.getElementById("nextBtn");
+      const dots = document.querySelectorAll(".carousel-dot");
+
+      function updateCarousel() {
+        carouselImage.src = images[currentIndex];
+        dots.forEach((dot, i) => {
+          dot.classList.toggle("bg-gray-600", i === currentIndex);
+          dot.classList.toggle("bg-gray-400", i !== currentIndex);
+        });
+      }
+
+      prevBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateCarousel();
+      });
+
+      nextBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateCarousel();
+      });
+
+      dots.forEach((dot) => {
+        dot.addEventListener("click", () => {
+          currentIndex = parseInt(dot.getAttribute("data-index"));
+          updateCarousel();
+        });
+      });
+    </script>
   </body>
 </html>

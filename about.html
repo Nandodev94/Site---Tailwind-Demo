@@ -6,27 +6,27 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
 
-  <body class="bg-gray-600 min-h-screen flex flex-col">
+  <body class="bg-gray-700 min-h-screen flex flex-col">
     <nav
       id="main-nav"
-      class="flex gap-4 bg-gray-800 p-4"
+      class="flex gap-4 bg-gray-800 p-4 mb-8 shadow-2xl shadow-black-100/50"
       aria-label="Main navigation"
     >
       <div class="flex gap-4 items-center">
         <div class="">
           <img
-            src="https://placehold.co/400x400"
-            alt="placeholder image"
+            src="images/DevStudiosLogo.png"
+            alt="DevStudio logo"
             class="w-16 h-16 rounded-full"
           />
         </div>
         <div class="">
-          <h1 class="text-3xl text-gray-100 font-bold underline">DevStudio</h1>
+          <h1 class="text-3xl text-gray-200 font-bold underline">DevStudio</h1>
         </div>
       </div>
 
       <div class="flex gap-4 items-center ml-auto">
-        <button class="bg-sky-300 p-2 rounded hover:bg-sky-400 active:bg-sky-700">
+        <button class="bg-sky-400 p-2 rounded hover:bg-sky-500 active:bg-sky-700">
           <a
             href="index.html"
             aria-current="page"
@@ -34,15 +34,15 @@
             >Home</a
           >
         </button>
-        <button class="bg-sky-300 p-2 rounded hover:bg-sky-400 active:bg-sky-700">
+        <button class="bg-sky-600 p-2 rounded hover:bg-sky-500 active:bg-sky-700">
           <a
-            href="about.html"
+            href="#"
             aria-current="page"
             class="aria-[current=page]:text-gray-100 aria-[current=page]:font-semibold p-2"
             >About</a
           >
         </button>
-        <button class="bg-sky-300 p-2 rounded hover:bg-sky-400 active:bg-sky-700">
+        <button class="bg-sky-400 p-2 rounded hover:bg-sky-500 active:bg-sky-700">
            <a
             href="contact.html"
             aria-current="page"
@@ -52,11 +52,11 @@
       </div>
     </nav>
 
-    <main class="flex-1">
+    <main class="flex-1 mx-15 bg-gray-700 p-8">
       <!-- About Section -->
       <section
         id="about"
-        class="about-section bg-gray-100 p-8"
+        class="about-section bg-gray-100 p-8 rounded-lg mb-8 shadow-2xl shadow-black/50"
         aria-label="About DevStudio"
       >
         
@@ -91,37 +91,28 @@
         </div>
         </div>
       </section>
-
+      <!-- About our Team  -->
       <section>
-        <div class="flex gap-4 items-center justify-center bg-gray-800 p-4">
+        <div class="flex gap-4 items-center justify-center bg-gray-800 p-4 rounded-lg mb-8 shadow-2xl shadow-black/50">
           <div class="flex-col p-8">
-            <img src="images\pexels-fauxels-3183150.jpg" alt="" />
-            <h2 class="text-xl text-gray-100 font-bold mb-4">Our Team</h2>
+            <img src="images\pexels-fauxels-3183150.jpg" alt="Web Design Team" />
+            <h2 class="text-xl text-gray-100 font-bold mb-4">Web Design</h2>
             <p class="text-gray-100">
-              Our team consists of talented professionals with expertise in
-              various technologies and industries. We are passionate about
-              delivering exceptional results and providing excellent customer
-              service to our clients.
+              Our design team creates stunning, user-centric interfaces that engage your audience. With expertise in modern design trends and UX principles, we craft beautiful digital experiences that reflect your brand identity and drive user engagement.
             </p>
           </div>
           <div class="flex-col p-8">
-            <img src="images\pexels-fauxels-3183150.jpg" class=" " alt="" />
-            <h2 class="text-xl text-gray-100 font-bold mb-4">Our Team</h2>
+            <img src="images\pexels-fauxels-3183150.jpg" class=" " alt="Development Team" />
+            <h2 class="text-xl text-gray-100 font-bold mb-4">Development</h2>
             <p class="text-gray-100">
-              Our team consists of talented professionals with expertise in
-              various technologies and industries. We are passionate about
-              delivering exceptional results and providing excellent customer
-              service to our clients.
+              Our skilled developers build robust, scalable applications using cutting-edge technologies. From front-end frameworks to back-end systems, we ensure your solutions are performant, secure, and future-proof for your growing business needs.
             </p>
           </div>
           <div class="flex-col p-8">
-            <img src="images\pexels-fauxels-3183150.jpg" alt="" />
-            <h2 class="text-xl text-gray-100 font-bold mb-4">Our Team</h2>
+            <img src="images\pexels-fauxels-3183150.jpg" alt="Project Management Team" />
+            <h2 class="text-xl text-gray-100 font-bold mb-4">Project Management</h2>
             <p class="text-gray-100">
-              Our team consists of talented professionals with expertise in
-              various technologies and industries. We are passionate about
-              delivering exceptional results and providing excellent customer
-              service to our clients.
+              Our project managers ensure seamless collaboration and timely delivery of every project. With clear communication, strategic planning, and attention to detail, we keep your project on track and aligned with your business objectives from start to finish.
             </p>
           </div>
         </div>
@@ -130,7 +121,7 @@
       <!-- Testimonials Section -->
       <section
         id="testimonials"
-        class="testimonials-section bg-gray-200 p-8"
+        class="testimonials-section bg-gray-200 p-8 rounded-lg mb-8 shadow-2xl shadow-black/50"
         aria-label="Client testimonials"
       >
         <h2 class="text-xl font-bold mb-4">What Our Clients Say</h2>
@@ -164,7 +155,7 @@
     <!-- Footer Section -->
     <footer
       id="site-footer"
-      class="bg-gray-400 p-4 text-center text-gray-700"
+      class="bg-gray-800 p-4 text-center text-gray-100 shadow-2xl shadow-black/50"
       role="contentinfo"
       aria-label="Site footer"
     >
@@ -172,7 +163,7 @@
       <ul class="flex justify-center gap-4 mt-2">
         <li><a href="#">Privacy Policy</a></li>
         <li><a href="#">Terms of Service</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </footer>
   </body>
