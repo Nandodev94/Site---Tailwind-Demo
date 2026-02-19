@@ -56,15 +56,19 @@
       <!-- About Section -->
       <section
         id="about"
-        class="about-section bg-gray-100 p-8 rounded-lg mb-8 shadow-2xl shadow-black/50"
+        class="bg-gray-100 p-6 md:p-8 rounded-lg mb-8 shadow-2xl shadow-black/50"
         aria-label="About DevStudio"
       >
         
-        <div class="about-content flex gap-8">
-        <div><img src="images\pexels-yankrukov-crop.JPG" alt=" " class="flex-col  h-auto mt-4 rounded-lg" /></div>
-        <div class="about-text flex-col p-5 gap-8">
-          <h2 class="text-xl font-bold mb-4">About DevStudio</h2>
-          <p class="text-gray-700">
+        <div class="flex flex-col md:flex-row gap-8 items-center">
+        <div><img
+      src="images/pexels-yankrukov-crop.JPG"
+      alt="DevStudio team working"
+      class="w-full md:w-1/2 h-auto rounded-lg"
+    /></div>
+        <div class="md:w-1/2">
+          <h2 class="text-2xl font-bold mb-4">About DevStudio</h2>
+          <p class="text-gray-700 leading-relaxed">
             DevStudio is a leading web development company specializing in
             creating custom, responsive websites and applications. Our team of
             experienced developers and designers work together to deliver
@@ -92,25 +96,25 @@
         </div>
       </section>
       <!-- About our Team  -->
-      <section>
-        <div class="flex gap-4 items-center justify-center bg-gray-800 p-4 rounded-lg mb-8 shadow-2xl shadow-black/50">
-          <div class="flex-col p-8">
-            <img src="images\pexels-fauxels-3183150.jpg" alt="Web Design Team" />
-            <h2 class="text-xl text-gray-100 font-bold mb-4">Web Design</h2>
+      <section class="mb-8">
+        <div class="grid gap-6 md:grid-cols-3 bg-gray-800 p-6 rounded-lg shadow-2xl shadow-black/50">
+          <div class="text-center">
+            <img src="images\pexels-fauxels-3183150.jpg" class="rounded-lg mb-4"alt="Web Design Team" />
+            <h2 class="text-xl text-gray-100 font-bold mb-2">Web Design</h2>
             <p class="text-gray-100">
               Our design team creates stunning, user-centric interfaces that engage your audience. With expertise in modern design trends and UX principles, we craft beautiful digital experiences that reflect your brand identity and drive user engagement.
             </p>
           </div>
-          <div class="flex-col p-8">
-            <img src="images\pexels-fauxels-3183150.jpg" class=" " alt="Development Team" />
-            <h2 class="text-xl text-gray-100 font-bold mb-4">Development</h2>
+          <div class="text-center">
+            <img src="images\pexels-fauxels-3183150.jpg" class="rounded-lg mb-4" alt="Development Team" />
+            <h2 class="text-xl text-gray-100 font-bold mb-2">Development</h2>
             <p class="text-gray-100">
               Our skilled developers build robust, scalable applications using cutting-edge technologies. From front-end frameworks to back-end systems, we ensure your solutions are performant, secure, and future-proof for your growing business needs.
             </p>
           </div>
-          <div class="flex-col p-8">
-            <img src="images\pexels-fauxels-3183150.jpg" alt="Project Management Team" />
-            <h2 class="text-xl text-gray-100 font-bold mb-4">Project Management</h2>
+          <div class="text-center">
+            <img src="images\pexels-fauxels-3183150.jpg" class="rounded-lg mb-4" alt="Project Management Team" />
+            <h2 class="text-xl text-gray-100 font-bold mb-2">Project Management</h2>
             <p class="text-gray-100">
               Our project managers ensure seamless collaboration and timely delivery of every project. With clear communication, strategic planning, and attention to detail, we keep your project on track and aligned with your business objectives from start to finish.
             </p>
@@ -121,12 +125,12 @@
       <!-- Testimonials Section -->
       <section
         id="testimonials"
-        class="testimonials-section bg-gray-200 p-8 rounded-lg mb-8 shadow-2xl shadow-black/50"
+        class="bg-gray-200 p-6 md:p-8 rounded-lg mb-8 shadow-2xl shadow-black/50"
         aria-label="Client testimonials"
       >
-        <h2 class="text-xl font-bold mb-4">What Our Clients Say</h2>
-        <div class="flex gap-4 items-center justify-center">          
-          <div class="flex-col p-4 bg-gray-300 rounded-lg">
+        <h2 class="text-2xl font-bold mb-6 text-center">What Our Clients Say</h2>
+        <div class="grid gap-6 md:grid-cols-3">          
+          <div class="bg-gray-300 p-4 rounded-lg">
             <p class="text-gray-700 italic">
               "DevStudio transformed our online presence with a stunning website
               that perfectly captures our brand. Their team was professional,
@@ -134,7 +138,7 @@
             </p>
             <p class="text-gray-700 mt-2 font-bold">- Jane Doe, CEO of Acme Corp</p>
           </div>
-          <div class="flex-col p-4 bg-gray-300 rounded-lg">
+          <div class="bg-gray-300 p-4 rounded-lg">
             <p class="text-gray-700 italic">
               "The team at DevStudio exceeded our expectations in every way.
               They delivered a high-quality website on time and within budget.
@@ -142,7 +146,7 @@
             </p>
             <p class="text-gray-700 mt-2 font-bold">- John Smith, Founder of Tech Solutions</p>
           </div>
-          <div class="flex-col p-4 bg-gray-300 rounded-lg">
+          <div class="bg-gray-300 p-4 rounded-lg">
             <p class="text-gray-700 italic">
               "Working with DevStudio was a fantastic experience. They took the
               time to understand our needs and created a beautiful, functional
